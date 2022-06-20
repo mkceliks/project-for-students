@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+<head>
+    <meta http-equiv="Content-Type" content = "text/html; charset=utf-8">
+    <meta http-equiv="Content-Language" content = "tr">
+    <meta charset="UTF-8">
+    
+    <title>Yönetim Giriş</title>
+    <link rel="stylesheet" href="css/admin.css">
+    <link rel="stylesheet" href="js/admin.js">
+    <script language="Javascript">
+function gizleOgrenci()
+{
+
+   window.location.href="teacherAdmin.html";  
+
+}
+
+</script>
+</head>
+<body>
+		<div id="formWrapper">
+		<div id="form">
+			<input style="margin-left: 35px;" type="radio"  name="aorb" onClick="gizleOgrenci()">Öğretim Görevlisi
+<input type="radio"  name="aorb" onClick="gizleOgretmen()" checked>Öğrenci
+	<h2 style="padding-bottom: 20px;text-align: center;">Öğrenci Girişi</h2>
+
+	<form action="studentControl.php" method="post">
+		<div class="form-item">
+			<p class="formLabel"></p>
+			<input type="text" name="adminisim" id="adminisim" class="form-style" placeholder="Kullanıcı Adı" required/>
+		</div>
+		<div class="form-item">
+			<p class="formLabel"></p>
+			<input type="password" name="adminPassword" id="adminPassword"  placeholder="Şifre" class="form-style" required/>			
+		</div><br>
+		<div style="margin-right: 110px;" class="form-item">	
+		<input type="submit" class="login" value="Giriş">
+		<div class="clear-fix"></div>
+		</div>
+		</form>
+</div>
+</div>
+
+</body>
+</html>
+    
+</body>
+</html>
